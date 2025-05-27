@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+  background-color: hsl(27, 100%, 96%);
+  color: #333;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  font-size: 22px;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.list{
+  padding-top: 15px;
+  padding-left: 2px;
+  margin-left: 2px;
+  margin-bottom: 15px;
+  line-height: 39px;
+  font-size: 22px;
+}
+.card.kursintro {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 22px;
+}
+
+.kursbilde {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.kursbilde img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.kurstekst {
+  flex: 2 1 400px;
+}
+h4 {
+  color: rgb(155, 43, 75);
+  margin-top: 0.5rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+h3 {
+  color: rgb(155, 43, 75);
+  margin-top: 0.5rem;
+  text-align: left;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+}
+h2 {
+  color: rgb(155, 43, 75);
+  margin-top: 0.5rem;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+}
+h1 {
+  margin: 0 auto;
+  margin-right: 4px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    font-style: normal;
+    text-align: center;
+    color:rgb(155, 43, 75);
+}
+
+.kurstekst ul {
+  padding-left: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.kontakt {
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(155, 43, 75);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  margin-top: 2rem;
+  font-size: 22px;
+}
+
+@media (max-width: 600px) {
+  .card.kursintro {
+    flex-direction: column;
+  }
+
+  .kursbilde,
+  .kurstekst {
+    width: 100%;
+  }
+}
+
+
+.quote-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 1rem 2rem;
+}
+
+.quote1 {
+background-image: url("../Bilder/snakkebobler.png");
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: 100% 83%;
+background-color: white;
+padding: 1rem;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+height: 200px;
+width: 280px;
+text-align: center;
+font-size: large;
+display: block;
+text-decoration: none;
+color: inherit;
+transition: transform 0.2s ease;
+}
+.quote2 {
+  background-image: url("../Bilder/Noter.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 80%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  width: 280px;
+  text-align: center;
+  font-size: large;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+  }
+.quote3 {
+    background-image: url("../Bilder/Kalender.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 90%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    width: 280px;
+    text-align: center;
+    font-size: large;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+    }
+.quote1:hover {
+transform: scale(1.05);
+}
+.quote2:hover {
+  transform: scale(1.05);
+  }
+  .quote3:hover {
+    transform: scale(1.05);
+    }
+header {
+  background-color: hsl(29, 100%, 96%);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.containernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 40px;
+  padding: 0 20px 0 5px;
+}
+
+nav.topnav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+nav.topnav a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 22px;
+}
+
+nav.topnav a:hover {
+  background-color: rgb(209, 219, 255);
+  border-radius: 15px;
+  transform: scale(1.05);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #333;
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  top: -8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+@media (max-width: 700px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  nav.topnav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .nav-toggle:checked + header .topnav {
+    display: flex;
+  }
+
+  .containernav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.insta-ikon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(209, 219, 255);
+  border-radius: 50%;
+  color: rgb(155, 43, 75);
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.insta-ikon:hover {
+  background-color: rgb(209, 219, 255);
+  transform: scale(1.1);
+}
